@@ -23,8 +23,6 @@ body {
     overflow-x: hidden;
 }
 
-/* صفحه اول */
-
 .cover {
     position: fixed;
     inset: 0;
@@ -77,8 +75,6 @@ body {
     box-shadow: 0 8px 25px #8b6b352f;
 }
 
-/* کارت */
-
 .invitation {
     min-height: 100vh;
     display: flex;
@@ -115,8 +111,6 @@ body {
         opacity: 1;
     }
 }
-
-/* تزئین گوشه‌ها */
 
 .corner {
     position: absolute;
@@ -186,6 +180,12 @@ h2 {
 
 .info strong {
     color: #8b672d;
+}
+
+.dinner {
+    font-size: 15px;
+    color: #9a7336;
+    margin-top: 3px;
 }
 
 .location {
@@ -264,7 +264,6 @@ h2 {
 }
 
 @media (max-width: 500px) {
-
     .card {
         padding: 45px 20px;
     }
@@ -281,8 +280,6 @@ h2 {
 </head>
 
 <body>
-
-<!-- صفحه اول -->
 
 <div class="cover" id="cover">
 
@@ -304,9 +301,6 @@ h2 {
     </div>
 
 </div>
-
-
-<!-- کارت دعوت -->
 
 <main class="invitation">
 
@@ -337,7 +331,10 @@ h2 {
 
             <div>
                 <strong>📅 تاریخ</strong><br>
-                ۱۴۰۵/۰۶/۲۵
+                ۱۴۰۵.۰۶.۲۸
+                <div class="dinner">
+                    به صرف شیرینی و شام
+                </div>
             </div>
 
             <div>
@@ -383,17 +380,13 @@ h2 {
 
 </main>
 
-
-<!-- دکمه موسیقی -->
-
 <button class="music" onclick="toggleMusic()" id="musicBtn">
     ♫
 </button>
 
 <audio id="music" loop>
-    <source src="music.mp3" type="audio/mpeg">
+    <source src="mob.mp3" type="audio/mpeg">
 </audio>
-
 
 <script>
 
@@ -406,9 +399,6 @@ function openInvitation() {
     }, 500);
 
 }
-
-
-/* موسیقی */
 
 function toggleMusic() {
 
@@ -428,9 +418,6 @@ function toggleMusic() {
     }
 
 }
-
-
-/* گل‌های شناور */
 
 function createFlower() {
 
